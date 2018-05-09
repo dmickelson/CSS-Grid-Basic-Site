@@ -2,15 +2,50 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>CSS Grids</title>
+    <style media="screen">
+      .wrapper {
+        display: grid;
+        /* grid-template-columns: 70% 30%; */
+        grid-template-columns: 40% 30% 30%;
+
+      }
+
+      .wrapper > div {
+        background:#eee;
+        padding: 1em;
+      }
+
+      .wrapper > div:nth-child(odd) {
+        background: #ddd;
+      }
+    </style>
   </head>
   <body>
 
     <section id="comment">
        <em>  CSS Grid Layout sample. Test the new CSS Grid layout and how to create grid based layouts and alignments. This is different from Flexbox which is for one-dimensional layouts in either colomns or rows. CSS Grids allow for two-dimensional layouts of rows and columns simultaneously with more complexity. We will look at properties for containers and items.
        </em>
-     </section>
+    </section>
 
+    <!-- NOTE: Could also call it gridcontainer or container -->
+    <div class="wrapper">
+      <div class="">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium impedit veniam a magni quidem voluptate reprehenderit quod, vel dolore cumque. Laboriosam nesciunt, assumenda doloribus ea omnis. Tempora corporis repellat ipsam autem totam natus pariatur officiis consequatur animi dolor eveniet, porro a quos ullam consequuntur sapiente cumque suscipit doloribus voluptatibus excepturi dolores. Corporis laborum deserunt necessitatibus, similique eaque odit magnam, quo, earum quasi, harum tempore sit esse labore aperiam. Pariatur ea neque at libero quasi alias blanditiis, id impedit atque itaque!
+      </div>
+      <div class="">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos doloremque natus odio necessitatibus tempore id excepturi aliquid dolor sapiente nisi optio qui laborum temporibus laudantium quo, vero modi? Sapiente, placeat!
+      </div>
+
+       <div class="">
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium impedit veniam a magni quidem voluptate reprehenderit quod, vel dolore cumque. Laboriosam nesciunt, assumenda doloribus ea omnis. Tempora corporis repellat ipsam autem totam natus pariatur officiis consequatur animi dolor eveniet, porro a quos ullam consequuntur sapiente cumque suscipit doloribus voluptatibus excepturi dolores. Corporis laborum deserunt necessitatibus, similique eaque odit magnam, quo, earum quasi, harum tempore sit esse labore aperiam. Pariatur ea neque at libero quasi alias blanditiis, id impedit atque itaque!
+       </div>
+       <div class="">
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos doloremque natus odio necessitatibus tempore id excepturi aliquid dolor sapiente nisi optio qui laborum temporibus laudantium quo, vero modi? Sapiente, placeat!
+       </div>
+       
+    <!-- NOTE: end wrapper -->
+     </div>
 
 
 
